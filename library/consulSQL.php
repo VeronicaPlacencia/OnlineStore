@@ -2,10 +2,10 @@
 /* Clase para ejecutar las consultas a la Base de Datos*/
 class ejecutarSQL {
     public static function conectar(){
-        if(!$con=  mysqli_connect("localhost","root","","test")){
+        if(!$con=  mysqli_connect("localhost","pink2511","pink2511T","test")){
             die("Error en el servidor, verifique sus datos");
         }
-        if (!mysqli_select_db($con, "store")) {
+        if (!mysqli_select_db($con, "store_25")) {
             die("Error al conectar con la base de datos, verifique el nombre de la base de datos");
         }
         /* Codificar la información de la base de datos a UTF8*/
