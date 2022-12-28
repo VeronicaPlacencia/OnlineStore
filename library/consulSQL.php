@@ -2,7 +2,7 @@
 /* Clase para ejecutar las consultas a la Base de Datos*/
 class ejecutarSQL {
     public static function conectar(){
-        if(!$con=  mysqli_connect("localhost","pink2511","pink2511T","test")){
+        if(!$con=  mysqli_connect("db4free.net","pink2511","pink2511T","test")){
             die("Error en el servidor, verifique sus datos");
         }
         if (!mysqli_select_db($con, "store_25")) {
